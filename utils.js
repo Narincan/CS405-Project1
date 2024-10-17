@@ -188,27 +188,6 @@ function getModelViewMatrix() {
       return new Float32Array(resultMatrix);
 }
 
-/*
- const degToRad = (deg) => deg * (Math.PI / 180);
-
-    // Create transformation matrices
-    const translationMatrix = createTranslationMatrix(0.3, -0.25, 0);
-    const scaleMatrix = createScaleMatrix(0.5, 0.5, 0.5);  // Scaling equally in x, y, z
-    const rotationMatrixX = createRotationMatrix_X(degToRad(30)); // 30 degrees on X-axis
-    const rotationMatrixY = createRotationMatrix_Y(degToRad(45)); // 45 degrees on Y-axis
-    const rotationMatrixZ = createRotationMatrix_Z(degToRad(60)); // 60 degrees on Z-axis
-
-    // Combine the rotation matrices (order matters)
-    let combinedRotationMatrix = multiplyMatrices(rotationMatrixZ, rotationMatrixY); // Z * Y
-    combinedRotationMatrix = multiplyMatrices(combinedRotationMatrix, rotationMatrixX); // (Z * Y) * X
-
-    // Combine with scaling and translation (order: scale -> rotate -> translate)
-    let modelViewMatrix = multiplyMatrices(scaleMatrix, combinedRotationMatrix); // Scale -> Rotate
-    modelViewMatrix = multiplyMatrices(translationMatrix, modelViewMatrix); // Translate -> (Scale -> Rotate)
-
-    return new Float32Array(modelViewMatrix);
-*/
-
 
 /**
  * 
